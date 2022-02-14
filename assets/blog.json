@@ -1,5 +1,20 @@
 [
-  {"id":1, "title":"Android Internals", "date":"15/02/22", "subtitle":"Deep introduction to internal archetecture of android operating system"},
-  {"id":2, "title":"What is Internet", "date":"16/02/22", "Let's see what is that term internet refers to and so about internet"},
-  {"id":3, "title":"How the Internet Works", "date":"17/02/22", "subtitle":"This blog explains you how the internet works and its mechanism of working"},
+    {
+        "id": 1,
+        "title": "Android Internals",
+        "date":"15/02/22", 
+        "subtitle":"Deep introduction to internal archetecture of android operating system"
+    },
+    {
+        "id": 2,
+        "title": "What is Internet",
+        "date":"16/02/22", 
+        "subtitle":"Let's see what is that term internet refers to and so about internet"
+    },
+    {
+        "id": 2,
+        "title": "How the Internet Works",
+        "date":"17/02/22", 
+        "subtitle":"This blog explains you how the internet works and its mechanism of working"
+    }
 ]
