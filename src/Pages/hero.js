@@ -9,7 +9,7 @@ function Hero() {
                     <nav className="w-full absolute">
                         <div className="hidden lg:flex w-full f-f-p justify-between items-center py-6 relative">
                             <div className="w-2/3">
-                                <img src="http://localhost:3000/weblogo.svg" alt="no logo" />
+                                <img src="/weblogo.svg" alt="no logo" />
                                 
                             </div>
                             <div className="md:w-1/2 xl:w-1/3">
@@ -17,9 +17,9 @@ function Hero() {
                                     <li className="border-b-4 border-indigo-600 pb-1">
                                         <a href="/">Home</a>
                                     </li>
-                                    <li className="border-b-4 border-transparent pb-1 hover:border-indigo-600">
+                                    {/* <li className="border-b-4 border-transparent pb-1 hover:border-indigo-600">
                                         <a href="/">Services</a>
-                                    </li>
+                                    </li> */}
                                     <li className="border-b-4 border-transparent pb-1 hover:border-indigo-600">
                                         <a href="https://www.linkedin.com/company/ipsecuritylabs">Contact</a>
                                     </li>
@@ -34,7 +34,7 @@ function Hero() {
                     <nav className="lg:hidden">
                         <div className="flex py-6 justify-between items-center px-4">
                             <div>
-                            <img src="http://localhost:3000/weblogo.svg" alt="no logo" />
+                            <img src="/weblogo.svg" alt="no logo" />
                                 
                             </div>
                             <div className=" flex items-center">
@@ -46,16 +46,16 @@ function Hero() {
                                             </a>
                                         </li>
                                         <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none  justify-center" onclick="dropdownHandler(this)">
-                                            <a href="/">
-                                                <span className="ml-2 font-bold">Stats</span>
+                                            <a href="https://www.linkedin.com/company/ipsecuritylabs">
+                                                <span className="ml-2 font-bold">Contact</span>
                                             </a>
                                         </li>
                                         <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700  items-center focus:text-indigo-700 focus:outline-none">
-                                            <a href="/">
-                                                <span className="ml-2 font-bold">Coins</span>
+                                            <a href="https://www.youtube.com/c/InaiyaParavai/">
+                                                <span className="ml-2 font-bold">Resources</span>
                                             </a>
                                         </li>
-                                        <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none  justify-center" onclick="dropdownHandler(this)">
+                                        {/* <li className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none  justify-center" onclick="dropdownHandler(this)">
                                             <a href="/">
                                                 <span className="ml-2 font-bold">Blog</span>
                                             </a>
@@ -64,7 +64,7 @@ function Hero() {
                                             <a href="/">
                                                 <span className="ml-2 font-bold">About Us</span>
                                             </a>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 )}
                                 <div className="xl:hidden" onClick={() => setShow(!show)}>
@@ -93,9 +93,11 @@ function Hero() {
                         <div className="md:w-3/5 md:pt-24 pb-10 lg:py-32 xl:py-48">
                             <h1 className="text-3xl lg:text-6xl xl:text-8xl font-black text-gray-900 text-center md:text-left tracking-tighter f-f-i md:w-7/12 leading-tight text-heading-color">We Care  Your App's Security</h1>
                             <h2 className="md:w-8/12 py-4 text-center md:text-left md:py-8 text-gray-700 text-lg lg:text-2xl">IP Security labs makes Cyber Security into a Handy Solution </h2>
+                            <a href="https://wa.me/8072450722">
                             <div className="w-full flex justify-center md:block">
                                 <button className="hover:opacity-90 bg-indigo-700 py-3 px-10 lg:py-7 lg:px-20 rounded-full text-white text-sm md:text-lg f-f-p">Request Demo</button>
                             </div>
+                            </a>
                         </div>
                         <div className="w-1/2 sm:w-2/5 h-64 md:h-auto m-auto flex items-center overflow-hidden">
                             {/* <img class="h-full" src="https://cdn.tuk.dev/assets/components/111220/Hero4/Rectangle.png" alt="Device"> */}

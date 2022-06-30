@@ -4,8 +4,8 @@ import WeDo from './Pages/wedo';
 import TrustUs from './Pages/trustus.js'
 import Differ from './Pages/differ.js'
 import Clients from './Pages/Clients.js'
-import Testimonials from './Pages/testimonials.js'
-import Contributions from './Pages/contributions.js'
+// import Testimonials from './Pages/testimonials.js'
+// import Contributions from './Pages/contributions.js'
 import Footer from './Pages/footer.js'
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
     <TrustUs />
     <Differ />
     <Clients />
-    <Testimonials />
-    <Contributions />
+    {/* <Testimonials /> */}
+    {/* <Contributions /> */}
     <Contact />
     <Footer />
 

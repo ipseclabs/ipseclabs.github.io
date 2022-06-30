@@ -1,269 +1,60 @@
+import React from "react";
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-
-export default function Contributions() {
+function Contributions() {
     return (
-        <div >
-            
-            <CarouselProvider isIntrinsicHeight={true} totalSlides={3} >
-                <div className="lg:hidden px-6 xl:px-0 overflow-y-hidden">
-                    <div className="container mx-auto">
-                        <div className="flex flex-col lg:items-center justify-center w-full  py-1">
-                            <h1 className="font-semibold text-gray-800 text-3xl md:text-4xl">Updated line</h1>
-                        </div>
-                        <div className="w-full flex flex-col items-end justify-center">
-                            <p className="text-lg text-gray-100">
-                                <span id="current"></span>
-                                <span className="text-gray-800"></span>
-                            </p>
-                            <div className="my-4 flex items-center">
-                                <ButtonBack>
-                                    <button aria-controls="slide" aria-label="slide back" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer mr-4 p-2 flex items-center justify-center ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="5" y1="12" x2="9" y2="16" />
-                                            <line x1="5" y1="12" x2="9" y2="8" />
-                                        </svg>
-                                    </button>
-                                </ButtonBack>
-                                <ButtonNext>
-                                    <div aria-controls="slide" aria-label="slide forward" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer flex items-center justify-center  ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="15" y1="16" x2="19" y2="12" />
-                                            <line x1="15" y1="8" x2="19" y2="12" />
-                                        </svg>
-                                    </div>
-                                </ButtonNext>
-                            </div>
-                        </div>
-                        <div className="flex justify-between ">
-                            <Slider>
-                                <Slide index={0}>
-                                    <div className="w-full px-5">
-                                        <div className="w-full flex justify-center items-center flex-col rounded-md">
-                                            <div style={{ backgroundImage: "url('https://i.ibb.co/93dVNbx/Rectangle-27.png')" }} className="relative  bg-cover w-full flex justify-center  flex-col rounded-md ">
-                                                <h1 className="w-40 text-white font-semibold text-lg  left-0 mt-7 ml-7 rounded  h-64 relative">Who doesn’t love a good swim</h1>
-
-                                                <button className="focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Slide>
-                                <Slide index={1}>
-                                    <div className="w-full px-5">
-                                        <div className=" w-full flex justify-center items-center flex-col rounded-md">
-                                            <div style={{ backgroundImage: "url('https://i.ibb.co/M6jV7ty/Rectangle-28.png');" }} className="relative bg-cover w-full flex justify-center  flex-col rounded-md ">
-                                                <h1 className="w-40 text-white font-semibold text-lg  left-0 mt-7 ml-7 rounded  h-64 relative">A truly immersive experience like never before</h1>
-
-                                                <button className="focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Slide>
-                                <Slide index={2}>
-                                    <div className="w-full px-5">
-                                        <div className="w-full flex justify-center items-center flex-col rounded-md">
-                                            <div style={{ backgroundImage: "url('https://i.ibb.co/Lgjy80Y/Content-image-1.png');" }} className="relative bg-cover w-full flex justify-center flex-col rounded-md ">
-                                                <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Maybe a walk on the beach could help</h1>
-
-                                                <button className="focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Slide>
-                            </Slider>
-                        </div>
+        <div className="bg-gray-50 py-20 flex flex-col items-center justify-center">
+            <div className="xl:w-1/2 w-11/12">
+                <h1 role="heading" tabIndex={0} className="text-6xl font-bold 2xl:leading-10 leading-0 text-center text-gray-800">
+                    Touching hundreds of lives
+                </h1>
+                <h2 role="contentinfo" tabIndex={0} className="text-base leading-normal text-center text-gray-600 mt-5">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text Lorem Ipsum is simply dummy text of the printing
+                </h2>
+            </div>
+            <div className="2xl:px-20 lg:px-12 px-4 flex flex-wrap items-start mt-4">
+                <div className="mt-24">
+                    <div className="flex items-end ">
+                    <iframe tabIndex={0}  className="w-20 h-20 rounded-lg mr-6" src="https://www.youtube.com/embed/D_2Qkj_KOpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        {/* <iframe title="video 1" tabIndex={0} src="https://i.ibb.co/kBgtHK6/Rectangle-5.png" alt="girl with blue background"  /> */}
+                        <iframe tabIndex={0}  src="https://www.youtube.com/embed/WykRFdf6XPE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="w-48 h-36 rounded-lg" allowfullscreen></iframe>
+                        <img tabIndex={0} src="https://i.ibb.co/9nLBtjx/Rectangle-3.png" alt="guy winking"  />
+                    </div>
+                    <div className="flex items-center justify-end my-6">
+                        <img tabIndex={0} src="https://i.ibb.co/jRbF1KF/Rectangle-4.png" alt="guy smiling" />
+                    </div>
+                    <div className="flex items-start">
+                        <img tabIndex={0} src="https://i.ibb.co/Sf4Q94L/Rectangle-6.png" alt="girl with bluw background" className="w-48 h-48 rounded-lg" />
+                        <img tabIndex={0} src="https://i.ibb.co/fnNqJrx/Rectangle-7.png" alt="guy with glasses" className="w-20 h-20 rounded-lg ml-6 flex-shrink-0 object-cover object-fit" />
                     </div>
                 </div>
-            </CarouselProvider>
-            <CarouselProvider naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={3} >
-                <div className="hidden lg:block px-6 xl:px-0 ">
-                    <div className="container mx-auto">
-                        <div className="flex flex-row">
-                            <div role="article" className="flex flex-col items-left justify-center w-full py-10">
-                                <h1 className="font-bold text-gray-800 text-3xl md:text-5xl">Updated line</h1>
-                            </div>
-                            <div className="w-full flex flex-col items-end justify-end pr-24 my-3">
-                                <p className="text-lg text-gray-100">
-                                    <span id="current3"></span>
-                                    <span className="text-gray-800"></span>
-                                </p>
-                            </div>
-                            <div className="my-4 flex items-center">
-                                <ButtonBack>
-                                    <button aria-controls="slide" aria-label="slide back" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer mr-4 p-2 flex items-center justify-center ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-left" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="5" y1="12" x2="9" y2="16" />
-                                            <line x1="5" y1="12" x2="9" y2="8" />
-                                        </svg>
-                                    </button>
-                                </ButtonBack>
-                                <ButtonNext>
-                                    <div aria-controls="slide" aria-label="slide forward" className="rounded-full hover:bg-gray-200 focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none cursor-pointer flex items-center justify-center  ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="30" height="30" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <line x1="5" y1="12" x2="19" y2="12" />
-                                            <line x1="15" y1="16" x2="19" y2="12" />
-                                            <line x1="15" y1="8" x2="19" y2="12" />
-                                        </svg>
-                                    </div>
-                                </ButtonNext>
-                            </div>
-                        </div>
-                        <div id="slide" aria-roledescription="carousel" aria-label="about healt care" className="slider3">
-                            <div className="slide-ana3">
-                                <Slider>
-                                    <Slide index={0}>
-                                        <div className="grid grid-cols-3  gap-6">
-                                            <div aria-live="off" aria-roledescription="slide1" className="">
-                                                <div style={{ backgroundImage: "url('https://i.ibb.co/93dVNbx/Rectangle-27.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col rounded-md ">
-                                                    <h1 className="w-40 text-white font-semibold text-left text-lg  left-0 mt-7 ml-7 rounded  h-64 relative">Who doesn’t love a good swim</h1>
-
-                                                    <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div aria-live="off" aria-roledescription="slide2" className=" w-full flex justify-center items-center flex-colrounded-md ">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/M6jV7ty/Rectangle-28.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">A truly immersive experience like never before</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="">
-                                                <div aria-live="off" aria-roledescription="slide3" className="bg-white w-full flex justify-center items-center flex-col rounded-md ">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/Lgjy80Y/Content-image-1.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Maybe a walk on the beach could help</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Slide>
-                                    <Slide index={1}>
-                                        <div className="grid grid-cols-3 gap-6">
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide4" className="bg-white w-full flex justify-center items-center flex-col  rounded-md ">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/93dVNbx/Rectangle-27.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Who doesn’t love a good swim</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide5" className="bg-white w-full flex justify-center items-center flex-col  rounded-md">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/M6jV7ty/Rectangle-28.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">A truly immersive experience like never before</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide6" className="bg-white w-full flex justify-center items-center flex-col  rounded-md">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/Lgjy80Y/Content-image-1.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Maybe a walk on the beach could help</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Slide>
-                                    <Slide index={2}>
-                                        <div className="grid grid-cols-3 gap-6">
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide7" className="bg-white w-full flex justify-center items-center flex-col  rounded-md">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/93dVNbx/Rectangle-27.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Who doesn’t love a good swim</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide8" className="bg-white w-full flex justify-center items-center flex-col  rounded-md">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/M6jV7ty/Rectangle-28.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">A truly immersive experience like never before</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className=" ">
-                                                <div aria-live="off" aria-roledescription="slide9" className="bg-white w-full flex justify-center items-center flex-col  rounded-md">
-                                                    <div style={{ backgroundImage: "url('https://i.ibb.co/Lgjy80Y/Content-image-1.png');" }} className="relative  bg-cover w-full flex justify-center  flex-col  rounded-md ">
-                                                        <h1 className="w-40 text-white font-semibold text-lg absolute left-0 mt-7 ml-7 rounded  h-64 relative">Maybe a walk on the beach could help</h1>
-
-                                                        <button className="focus:bg-gray-300 focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none absolute right-10 bottom-7 bg-white rounded-full p-2 hover:opacity-75">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Slide>
-                                </Slider>
-                            </div>
-                        </div>
+                <div className="ml-6 mt-32">
+                    <img tabIndex={0} src="https://i.ibb.co/LSxy7fy/Rectangle-9.png" className="w-72 h-80 rounded-lg" alt="guy with sunglasses" />
+                    <div className="flex items-start mt-6">
+                        <img tabIndex={0} src="https://i.ibb.co/X8PKD3q/Rectangle-8.png" alt="girl  laughing" className="w-48 h-48 rounded-lg" />
+                        <img tabIndex={0} src="https://i.ibb.co/2Yj51CY/Rectangle-13.png" alt="guy with glasses" className="w-20 h-20 rounded-lg ml-6 object-cover object-fit" />
                     </div>
                 </div>
-            </CarouselProvider>
+                <div className="mt-14 ml-6">
+                    <div className="lg:flex ">
+                        <div>
+                            <img tabIndex={0} src="https://i.ibb.co/bWGVSkP/Rectangle-10.png" alt="group of friends" className="w-96 h-72 rounded-lg object-center object-fit" />
+                        </div>
+                        <div>
+                            <div className="flex ml-6">
+                                <img tabIndex={0} src="https://i.ibb.co/80jvpSv/Rectangle-16.png" className="w-20 h-20 rounded-lg mt-14" alt="man" />
+                                <img tabIndex={0} src="https://i.ibb.co/6PR2Y74/Rectangle-15.png" className="w-20 h-24 rounded-lg ml-6" alt="woman" />
+                            </div>
+                            <img tabIndex={0} src="https://i.ibb.co/M5rvjhk/Rectangle-14.png" alt="boy with blonde hair" className="ml-6 mt-6 w-48 h-32 rounded-lg" />
+                        </div>
+                    </div>
+                    <div className="mt-6 flex">
+                        <img tabIndex={0} className="w-48 h-48 rounded-lg" src="https://i.ibb.co/GPpMsbr/Rectangle-12.png" alt="young girl with red hair" />
+                        <img tabIndex={0} className="w-72 h-56 rounded-lg ml-6" src="https://i.ibb.co/VBcgkVL/Rectangle-11.png" alt="young girl with red hair" />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
+
+export default Contributions;
