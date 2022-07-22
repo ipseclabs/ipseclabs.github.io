@@ -7,6 +7,7 @@ import Clients from './Pages/Clients.js'
 // import Testimonials from './Pages/testimonials.js'
 // import Contributions from './Pages/contributions.js'
 import Footer from './Pages/footer.js'
+import Contributions from "./Pages/Contributions.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <Clients />
     {/* <Testimonials /> */}
     {/* <Contributions /> */}
+    <Contributions />
     <Contact />
     <Footer />
 
