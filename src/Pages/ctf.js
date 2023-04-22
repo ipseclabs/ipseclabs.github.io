@@ -2,42 +2,22 @@
 const products = [
     {
       id: 1,
-      name: 'Flutter Reverse Engineering Tutorial',
-      href: 'https://www.youtube.com/watch?v=mImWBR5cKU4',
-      imageSrc: 'https://i9.ytimg.com/vi/mImWBR5cKU4/mqdefault.jpg?v=61285fa1&sqp=CISmkaIG&rs=AOn4CLCdQa692dFBYH8KsRr0-ZoQ5bvb_g',
+      name: 'Droid Escape 1',
+      href: 'https://tinyurl.com/ipsec-c1',
+      imageSrc: 'https://ipseclabs.com/static/ipc1.png',
       imageAlt: "Flutter rev",
        price: 'Abhinivesh',
-      color: 'App Sec',
+      color: 'solves: 0',
       
     },
-    {
-        id: 2,
-        name: 'React Native Reverse Engineering Tutorial',
-        href: 'https://www.youtube.com/watch?v=iQF25diTuJE',
-        imageSrc: 'https://i9.ytimg.com/vi/iQF25diTuJE/mqdefault.jpg?v=6127102b&sqp=CISmkaIG&rs=AOn4CLDWv0PAz6FysWfHrx-l3dS4s2I6Tw',
-        imageAlt: "react rev",
-        price: 'Abhinivesh',
-        color: 'App Sec',
-        
-      },
-      {
-        id: 3,
-        name: 'SSL Pinning Bypass Flutter',
-        href: 'https://www.youtube.com/watch?v=ycKl7bfsozA',
-        imageSrc: 'https://i9.ytimg.com/vi/ycKl7bfsozA/mqdefault.jpg?v=62ff5101&sqp=CLCokaIG&rs=AOn4CLCGRsAeUiPUmbGix77DRKhlbFE7MQ',
-        imageAlt: "bof",
-        price: 'Abhinivesh',
-        color: 'App Sec',
-        
-      },
     // More products...
   ]
   
-  export default function Contributions() {
+  export default function CTF() {
     return (
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Our Contributions</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Capture the flag challenges</h2>
   
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (

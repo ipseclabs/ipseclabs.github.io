@@ -1,3 +1,4 @@
+
 import Contact from "./Pages/contact.js"
 import Hero from './Pages/hero.js';
 import WeDo from './Pages/wedo';
@@ -9,21 +10,25 @@ import Clients from './Pages/Clients.js'
 import Footer from './Pages/footer.js'
 import Contributions from "./Pages/Contributions.js";
 import CTF from "./Pages/ctf.js";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AllSections from "./all.js";
 
-function App() {
-  return (
-   
-    <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<AllSections />}>
 
-        </Route>
-    </Routes>
-    </BrowserRouter>
-   
-  );
+export default function AllSections() {
+    return (
+        <>
+        
+        <Hero />
+        <CTF id={"#ctf"} />
+    <WeDo />
+    <TrustUs />
+    <Differ />
+    <Clients />
+    {/* <Testimonials /> */}
+    {/* <Contributions /> */}
+    
+    <Contributions />
+    <Contact />
+    <Footer />
+
+        </>
+    );
 }
-
-export default App;

@@ -53,7 +53,7 @@ const Footer = () => {
                 </div> */}
                 <div className="flex items-center mt-6">
                     <p className="text-base leading-4 text-gray-800">
-                        2022 <span className="font-semibold">IP Security Labs</span>
+                        2023 <span className="font-semibold">IP Security Labs</span>
                     </p>
                     <div className="border-l border-gray-800 pl-2 ml-2">
                         <p className="text-base leading-4 text-gray-800">All righys reserved</p>
