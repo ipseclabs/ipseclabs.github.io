@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 
@@ -11,11 +12,16 @@ interface ContactFormProps {
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export default function ContactForm({ defaultTopic }: ContactFormProps) {
+  const searchParams = useSearchParams();
+  const topicParam = searchParams.get("topic");
+  const initialTopic =
+    topicParam && ["Project", "Community", "Other"].includes(topicParam)
+      ? (topicParam as "Project" | "Community" | "Other")
+      : defaultTopic ?? "Project";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [topic, setTopic] = useState<"Project" | "Community" | "Other">(
-    defaultTopic ?? "Project"
-  );
+  const [topic, setTopic] = useState<"Project" | "Community" | "Other">(initialTopic);
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<FormStatus>("idle");
   const [responseMessage, setResponseMessage] = useState("");

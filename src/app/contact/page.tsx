@@ -7,21 +7,14 @@ import ContactForm from '@/components/ContactForm'
 import { LinkedInIcon } from '@/components/Icons'
 import { siteConfig } from '@/content/site'
 
+import { Suspense } from 'react';
+
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with IP Security Labs regarding security projects, community participation, or inquiries.',
 }
 
-export default async function ContactPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }> | { [key: string]: string | string[] | undefined }
-}) {
-  const resolvedSearchParams = await searchParams;
-  const topicParam = resolvedSearchParams?.topic as string | undefined;
-  const defaultTopic = topicParam && ['Project', 'Community', 'Other'].includes(topicParam) 
-    ? (topicParam as 'Project' | 'Community' | 'Other') 
-    : undefined;
+export default function ContactPage() {
 
   return (
     <>
@@ -71,7 +64,9 @@ export default async function ContactPage({
 
             <ScrollReveal delay={0.1}>
               <div className="bg-surface border border-border rounded-2xl p-6 sm:p-8 shadow-sm">
-                <ContactForm defaultTopic={defaultTopic} />
+                <Suspense fallback={<div className="p-8 text-center text-text-muted">Loading form...</div>}>
+                  <ContactForm />
+                </Suspense>
               </div>
             </ScrollReveal>
 
